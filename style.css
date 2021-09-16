@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  margin: 3% auto 0;
+  width: 50%;
+  position: relative;
+}
+
+.info-container {
+  z-index: 1;
+  background-color: #d8cece;
+  border: 3px solid #55a5f2;
+  display: flex;
+  padding: 20px;
+  color: #444;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+.attempts {
+  margin-left: auto;
+}
+.timer {
+  margin: auto;
+  background-color: #55a5f2;
+  padding: 1%;
+  color: white;
+  border-radius: 10%;
+  font-weight: bold;
+}
+/*Images Container*/
+.imgs-container {
+  z-index: 1;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #55a5f2;
+  height: 50%;
+}
+.imgs-container .image-block {
+  width: 17%;
+  margin: 1% auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  top: 0;
+  height: 120px;
+  cursor: pointer;
+}
+.imgs-container .image-block .back {
+  transform: rotateY(180deg);
+}
+.imgs-container .image-block .front {
+  background-color: #333;
+  line-height: 120px;
+  text-align: center;
+}
+.imgs-container .image-block .front::before {
+  content: "?";
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
+}
+.imgs-container .image-block .face {
+  border: 5px solid #55a5f2;
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+.imgs-container .image-block .face img {
+  width: 100%;
+  height: 100%;
+}
+.imgs-container .image-block.is-flipped,
+.imgs-container .image-block.matched {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+/*start splash Screen*/
+.control-button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(68, 68, 68, 0.418);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-button span {
+  background-color: #55a5f2;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+.stop-clicking {
+  pointer-events: none;
+}
+.completed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(68, 68, 68, 0.418);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: capitalize;
+}
+.completed .box {
+  padding: 5px;
+  height: 45%;
+  width: 50%;
+  background-color: #dcdede;
+  border-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  display: flex;
+}
+.completed .box div {
+  background-color: #5f6e7b;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+.completed button {
+  padding: 20px;
+  background-color: #55a5f2;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80%;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.completed button:focus {
+  outline: none;
+}
+.completed #score {
+  color: white;
+}
+.completed .box #score > span {
+  font-weight: bold;
+}
+.completed .menu {
+  z-index: 2;
+}
+.completed .box.leader-board {
+  border-top: 10px solid #5f6e7b;
+  border-bottom: 10px solid #5f6e7b;
+
+  z-index: 3;
+  width: 70%;
+  height: 70%;
+  background-color: #55a5f2;
+  display: none;
+  justify-content: center;
+  padding: 5px;
+}
+
+.completed .leader-board ol {
+  border-radius: 10px;
+  color: white;
+  height: 70%;
+  width: 85%;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 3px solid #5f6e7b;
+  padding: 3%;
+  background-color: #5f6e7b;
+}
+.completed .leader-board ol li {
+  display: flex;
+  gap: 10%;
+  align-content: space-around;
+  margin-top: 5%;
+  margin-left: 4%;
+}
+
+.completed .leader-board ol li span {
+  color: white;
+  width: 40%;
+}
+#back {
+  padding: 10px;
+  background: #5f6e7b;
+  color: white;
+  width: 50%;
+  font-size: 1em;
+}
+.completed .leader-board p {
+  padding: 10px;
+
+  border: 2px solid #5f6e7b;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  border-radius: 10px;
+  margin: 3% 0;
+  text-align: center;
+}

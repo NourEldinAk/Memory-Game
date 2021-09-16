@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="control-button">
+        <span>Start Game</span>
+      </div>
+      <div class="completed">
+        <div class="box menu">
+          <div>Completed</div>
+          <button id="again">play again ?</button>
+          <div id="score">your score : <span></span></div>
+          <button id="leaderButton">LeaderBoard</button>
+        </div>
+        <div class="box leader-board" id="leader-board">
+          <button id="back">Back</button>
+          <p id="top">Top 5 Players</p>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="name">Hello : <span></span></div>
+        <div class="timer">1:00</div>
+        <div class="attempts">Failed attempts : <span>0</span></div>
+      </div>
+      <div class="imgs-container">
+        <div class="image-block" data-index="0">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/angular-300x300.png" alt="angular" />
+          </div>
+        </div>
+        <div class="image-block" data-index="0">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/angular-300x300.png" alt="angular" />
+          </div>
+        </div>
+        <div class="image-block" data-index="1">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs//vueJs.png" alt="vueJs" />
+          </div>
+        </div>
+        <div class="image-block" data-index="1">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/vueJs.png" alt="vueJs" />
+          </div>
+        </div>
+        <div class="image-block" data-index="2">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/react.png" alt="react" />
+          </div>
+        </div>
+        <div class="image-block" data-index="2">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/react.png" alt="react" />
+          </div>
+        </div>
+        <div class="image-block" data-index="3">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/python.png" alt="python" />
+          </div>
+        </div>
+        <div class="image-block" data-index="3">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/python.png" alt="python" />
+          </div>
+        </div>
+        <div class="image-block" data-index="4">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/Javascript.png" alt="javascript" />
+          </div>
+        </div>
+        <div class="image-block" data-index="4">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/Javascript.png" alt="javascript" />
+          </div>
+        </div>
+        <div class="image-block" data-index="5">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/Java.png" alt="java" />
+          </div>
+        </div>
+        <div class="image-block" data-index="5">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/Java.png" alt="java" />
+          </div>
+        </div>
+        <div class="image-block" data-index="6">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/html.png" alt="html" />
+          </div>
+        </div>
+        <div class="image-block" data-index="6">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/html.png" alt="html" />
+          </div>
+        </div>
+        <div class="image-block" data-index="7">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/css.png" alt="css" />
+          </div>
+        </div>
+        <div class="image-block" data-index="7">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/css.png" alt="css" />
+          </div>
+        </div>
+        <div class="image-block" data-index="8">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/c++.png" alt="c++" />
+          </div>
+        </div>
+        <div class="image-block" data-index="8">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/c++.png" alt="c++" />
+          </div>
+        </div>
+        <div class="image-block" data-index="9">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/bootstrap.png" alt="bootstrap" />
+          </div>
+        </div>
+        <div class="image-block" data-index="9">
+          <div class="face front"></div>
+          <div class="face back">
+            <img src="/imgs/bootstrap.png" alt="bootstrap" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="/sounds/success3.mp3" preload="auto"></audio>
+    <audio id="failed" src="/sounds/failed.mp3"></audio>
+    <script src="/script.js"></script>
+  </body>
+</html>
